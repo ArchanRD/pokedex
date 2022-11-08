@@ -37,14 +37,6 @@ body{
     padding: 0 10px;
     background: rgb(255 255 255 / 88%);
     backdrop-filter:  blur(10px);
-    cursor: pointer;
-    transition: all ease .2s;
-}
-
-.container .card:hover{
-    transform: scale(1.08);
-    backdrop-filter: blur(0px);
-    background-color: white;
 }
 
 .pokeImage{
