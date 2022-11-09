@@ -10,7 +10,6 @@ body{
     height: 350px;
     margin: 10px;
     text-align: center;
-    overflow: hidden;
     background: transparent;
     cursor: pointer;
     transition: all ease .2s;
