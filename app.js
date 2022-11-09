@@ -34,12 +34,18 @@ function createPokemonCard(pokemon) {
   flipCardInner.appendChild(flipCardFront);
   flipCardInner.appendChild(flipCardBack);
 
+  let instruction = document.createElement("p")
+  instruction.innerHTML = "Hover/Click the card"
+  instruction.style.fontFamily = "Poppins"
+
+  setTimeout(() => {
+    instruction.remove()
+  }, 4000);
+
+
   //------------------------------------//
 
   const name = `${pokemon.name}`;
-  // let card = document.createElement('div')
-  // card.classList.add('card')
-  // container.appendChild(card)
   let types = [];
   let pokeAbility = [];
 
@@ -129,4 +135,6 @@ function createPokemonCard(pokemon) {
     moves.innerHTML += pokeMoves[i]
   }
   flipCardBack.appendChild(moves);
+
+  flipCardFront.appendChild(instruction)
 }
